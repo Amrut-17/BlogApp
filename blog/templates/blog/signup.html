@@ -1,0 +1,79 @@
+{% extends 'blog/core.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-sm-6 colorclass ">
+        <h3 class="my-2 text-center titlefont">SignUp</h3>
+        
+        {% if messages %}
+            {% for message in messages %}
+                <p {% if message.tags %} class="alert alert-success mb-3" {% endif %}>
+                    {{message}}
+                </p>
+            {% endfor %}
+        {% endif %}
+
+
+        <form action="" method="post" autocomplete="off" novalidate class="formfonts">
+            {% csrf_token %}
+            
+            {% comment %}   form control {% endcomment %}
+            {% for fm in form %}
+                <div class="form-group mt-3">
+                    {{fm.label_tag}}
+                    {{fm}}
+                    <small style="color:red">{{fm.errors|striptags}}</small>
+                </div>
+            {% endfor %} 
+            <input type="submit" value="SignUp" class="btn btn-primary mt-4">
+
+            {% comment %} Non fields error {% endcomment %}
+            {% if form.non_field_errors %}
+                {% for error  in form.non_field_errors  %}
+                    <p class="alert alert-danger my-2">
+                        {{error}}
+                    </p>
+                {% endfor %}
+            {% endif %}
+
+        </form>
+        
+
+    </div>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+{% comment %} 
+<div class="col-sm-6">
+            <h3 class="my-2">Login Page</h3>
+            <form action="" method="post" autocomplete="off">
+                {% csrf_token %}
+
+                {% for fm in form %}
+                    <div class="form-group">
+                        {{fm.label_tag}}
+                        {{fm}}
+                        <small style="color:red">{{fm.errors|striptags}}</small>
+                    </div>
+                {% endfor %}
+                <input type="submit" value="Login" class="btn btn-outline-success mt-4">
+
+                {% if form.non_field_errors %}
+                    {% for error in form.non_fields_error %}
+                        {{error}}
+                    {% endfor %}
+                {% endif %}
+
+            </form>
+        </div> {% endcomment %}
+
+
+

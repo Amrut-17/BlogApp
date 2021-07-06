@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+
+body{
+    /* background-color: white; */
+    color: white;
+}
+
+.brand a{
+    font-size: x-large;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+.brand a:hover{
+    color: white;
+}
+
+.bar {
+    /* color: white; */
+    margin-left: 15px;
+}
+
+.bar:hover{
+    color: white;
+}
+.letter{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.nav-item:hover{
+    border-bottom: 1px solid #2196f3;
+    border-right: 1px solid #2196f3;
+    color: white;
+    box-shadow: inset 4px 4px 4px rgb(95, 29, 29), 4px 4px 4px #2196f3;
+}
+
+.jumbo-color{
+    background: #1D976C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 6px 6px 4px #2196f3;
+}
+
+/* .pstitle{
+    background: yellow;
+    border: 1px solid red;
+} */
+
+.title{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    /* font-family: 'Zilla Slab Highlight'; */
+    font-size: 2rem;
+    margin-bottom: -5px;
+    letter-spacing: 1px;
+    
+    /* background: yellow; */
+}
+.lead{
+    font-family: 'Times New Roman', Times, serif;
+}
+.bold{
+    font-weight: bold;
+}
+
+.warning{
+    color: red;
+} 
+
+.bgcolor{
+    /* background: #40E0D0;
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); */
+
+    /* background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+    background: linear-gradient(to right, #38ef7d, #11998e);  */
+/* 
+    background: #870000;  
+    background: -webkit-linear-gradient(to left, #190A05, #870000); 
+    background: linear-gradient(to left, #190A05, #870000);  */
+
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #14140e, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #222016,rgb(194, 23, 23), #d19d0e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+}
+
+.colorclass{
+    color: white;
+    font-weight: bold;
+}
+
+.dashbg{
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.postsbg{
+    background: #00c3ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.space{
+    margin-left: 5px;
+}
+
+.cd{
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.contactimages img{
+    /* width: 60px; */
+    height: 180px;
+    width: 180px;
+    margin-left: 30px;
+}
+
+.titlefont{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+
+.formfonts{
+    font-family: 'Eczar', serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.abt{
+    font-size: large;
+}

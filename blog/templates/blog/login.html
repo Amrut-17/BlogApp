@@ -1,0 +1,67 @@
+{% extends 'blog/core.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div class="container loginbg" >
+        {% comment %} <img src="{% static 'blog/images/blog.jpg' %}" alt="img"> {% endcomment %}
+        <div class="col-sm-4 colorclass mt-4">
+            <h3 class="my-2 text-center titlefont">Login</h3>
+            <form action="" method="post" autocomplete="off" class="formfonts">
+                {% csrf_token %}
+
+                {% for fm in form %}
+                    <div class="form-group mt-4">
+                        {{fm.label_tag}}
+                        {{fm}}
+                        <small style="color:red">{{fm.errors|striptags}}</small>
+                    </div>
+                {% endfor %}
+                <input type="submit" value="Login" class="btn btn-outline-primary mt-4">
+
+                {% if form.non_field_errors %}
+                    {% for error in form.non_fields_error %}
+                        {{error}}
+                    {% endfor %}
+                {% endif %}
+
+            </form>
+        </div>
+    <div>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+{% comment %} 
+<div class="col-sm-6">
+            <h3 class="my-2">Login Page</h3>
+            <form action="" method="post" autocomplete="off">
+                {% csrf_token %}
+
+                {% for fm in form %}
+                    <div class="form-group">
+                        {{fm.label_tag}}
+                        {{fm}}
+                        <small style="color:red">{{fm.errors|striptags}}</small>
+                    </div>
+                {% endfor %}
+                <input type="submit" value="Login" class="btn btn-outline-success mt-4">
+
+                {% if form.non_field_errors %}
+                    {% for error in form.non_fields_error %}
+                        {{error}}
+                    {% endfor %}
+                {% endif %}
+
+            </form>
+        </div> {% endcomment %}
+
+
+

@@ -1,1 +1,0 @@
-web: waitress-serve --port=$PORT microblog.wsgi:application
